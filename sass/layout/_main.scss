@@ -1,0 +1,39 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //   background-color: aqua;
+  height: 70vh;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__presentation {
+    // background-color: yellow;
+    // padding-left: 3rem;
+  }
+  &__headline {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: $color-primary;
+    line-height: 1.3;
+    letter-spacing: 1.4px;
+  }
+
+  &__text {
+    max-width: 48ch;
+    font-size: 2.4rem;
+    line-height: 1.4;
+  }
+
+  &__img-box {
+    // background-color: coral;
+    display: grid;
+    justify-items: end;
+  }
+  &__img-asset {
+    width: 90%;
+    height: auto;
+    // transform: translateX(7%);
+  }
+}

@@ -12,8 +12,10 @@ html {
 
 body {
   box-sizing: border-box;
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 a {

@@ -75,21 +75,17 @@
   display: flex;
   justify-content: space-between;
 
-  .btn {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-
-    color: white;
-    font-weight: 600;
-    // background-color: $color-primary;
-  }
-
   &__btn {
-    padding: 0.2rem 3.4rem;
+    padding: 0.3rem 3rem;
     font-size: 2.2rem;
     border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 600;
 
-    &--red {
+    &--red:link,
+    &--red:visited {
       background-color: $color-menu-red;
       border: solid 3px $color-menu-red;
       &:hover {
@@ -97,8 +93,12 @@
         color: $color-menu-red;
         border: solid 3px $color-menu-red;
       }
+      &:active {
+        background-color: #fff2f2;
+      }
     }
-    &--orange {
+    &--orange:link,
+    &--orange:visited {
       background-color: $color-menu-orange;
       border: solid 3px $color-menu-orange;
       &:hover {
@@ -106,8 +106,12 @@
         color: $color-menu-orange;
         border: solid 3px $color-menu-orange;
       }
+      &:active {
+        background-color: #fff5ed;
+      }
     }
-    &--yellow {
+    &--yellow:link,
+    &--yellow:visited {
       background-color: $color-menu-yellow;
       border: solid 3px $color-menu-yellow;
       &:hover {
@@ -115,8 +119,12 @@
         color: $color-menu-yellow;
         border: solid 3px $color-menu-yellow;
       }
+      &:active {
+        background-color: #fdfbeb;
+      }
     }
-    &--green {
+    &--green:link,
+    &--green:visited {
       background-color: $color-menu-green;
       border: solid 3px $color-menu-green;
       &:hover {
@@ -124,8 +132,12 @@
         color: $color-menu-green;
         border: solid 3px $color-menu-green;
       }
+      &:active {
+        background-color: #ebfff9;
+      }
     }
-    &--blue {
+    &--blue:link,
+    &--blue:visited {
       background-color: $color-menu-blue;
       border: solid 3px $color-menu-blue;
       &:hover {
@@ -133,14 +145,21 @@
         color: $color-menu-blue;
         border: solid 3px $color-menu-blue;
       }
+      &:active {
+        background-color: #ebf6ff;
+      }
     }
-    &--purple {
+    &--purple:link,
+    &--purple:visited {
       background-color: $color-menu-purple;
       border: solid 3px $color-menu-purple;
       &:hover {
         background-color: white;
         color: $color-menu-purple;
         border: solid 3px $color-menu-purple;
+      }
+      &:active {
+        background-color: #f2eeff;
       }
     }
   }
