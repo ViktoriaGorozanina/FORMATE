@@ -1,0 +1,62 @@
+.header {
+  display: grid;
+  gap: 3rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  //   background-color: aquamarine;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 2rem;
+  align-items: center;
+  //   background-color: red;
+
+  &__icon {
+    height: 7rem;
+    width: auto;
+    fill: $color-primary;
+    // background-color: yellow;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: $color-primary;
+    // background-color: rgba(0, 0, 255, 0.392);
+    line-height: 1;
+
+    &-formate {
+      font-size: 5.4rem;
+      //   background-color: rgba(255, 192, 203, 0.451);
+    }
+    &-sub {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+  }
+}
+
+.access {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-content: center;
+  gap: 5rem;
+  //   background-color: beige;
+  font-size: 2rem;
+  color: $color-primary;
+
+  &__login {
+    color: inherit;
+    align-self: center;
+    font-weight: 600;
+  }
+
+  &__cta-plan {
+    color: inherit;
+  }
+}

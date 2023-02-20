@@ -1,9 +1,22 @@
-.btn:link,
-.btn:visited {
+.btn {
   outline-color: transparent;
-}
 
-.btn:hover,
-.btn:active {
-  outline-color: transparent;
+  &:link,
+  &:visited {
+  }
+
+  &:hover,
+  &:active {
+  }
+
+  &__full {
+  }
+
+  &__outline:link,
+  &__outline:visited {
+    padding: 1.2rem 3.6rem;
+    border: solid 3px $color-primary;
+    border-radius: 100px;
+    font-weight: 600;
+  }
 }
