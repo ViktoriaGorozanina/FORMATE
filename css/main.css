@@ -31,17 +31,23 @@ a {
 
 .btn {
   outline-color: transparent;
+  letter-spacing: 1px;
 }
 .btn__outline:link, .btn__outline:visited {
-  padding: 1.2rem 3.6rem;
-  border: solid 3px #008479;
+  padding: 0.8rem 3.2rem;
+  border: solid 3px #087f73;
   border-radius: 100px;
   font-weight: 600;
+}
+.btn__outline:hover, .btn__outline:active {
+  color: white;
+  background-color: #087f73;
 }
 
 .header {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
+  padding-top: 1.8rem;
 }
 
 .nav-header {
@@ -67,15 +73,16 @@ a {
 .logo__icon {
   height: 7rem;
   width: auto;
-  fill: #008479;
+  fill: #087f73;
 }
 .logo__text {
   text-transform: uppercase;
-  color: #008479;
+  color: #087f73;
   line-height: 1;
 }
 .logo__text-formate {
-  font-size: 5.4rem;
+  font-size: 5.55rem;
+  font-weight: 600;
 }
 .logo__text-sub {
   font-weight: 500;
@@ -88,16 +95,101 @@ a {
   grid-template-columns: repeat(2, max-content);
   -ms-flex-line-pack: center;
       align-content: center;
-  gap: 5rem;
+  gap: 3.5rem;
   font-size: 2rem;
-  color: #008479;
+  color: #087f73;
 }
 .access__login {
   color: inherit;
   -ms-flex-item-align: center;
       align-self: center;
   font-weight: 600;
+  -webkit-transition: -webkit-text-decoration 2s;
+  transition: -webkit-text-decoration 2s;
+  -o-transition: text-decoration 2s;
+  transition: text-decoration 2s;
+  transition: text-decoration 2s, -webkit-text-decoration 2s;
 }
-.access__cta-plan {
+.access__login:hover {
+  color: #0ca694;
+}
+.access__login:active {
+  color: #006256;
+}
+.access__plan {
   color: inherit;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav .btn {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 600;
+}
+.nav__btn {
+  padding: 0.2rem 3.4rem;
+  font-size: 2.2rem;
+  border-radius: 100px;
+}
+.nav__btn--red {
+  background-color: #ff6b6b;
+  border: solid 3px #ff6b6b;
+}
+.nav__btn--red:hover {
+  background-color: white;
+  color: #ff6b6b;
+  border: solid 3px #ff6b6b;
+}
+.nav__btn--orange {
+  background-color: #ff922b;
+  border: solid 3px #ff922b;
+}
+.nav__btn--orange:hover {
+  background-color: white;
+  color: #ff922b;
+  border: solid 3px #ff922b;
+}
+.nav__btn--yellow {
+  background-color: #fcc419;
+  border: solid 3px #fcc419;
+}
+.nav__btn--yellow:hover {
+  background-color: white;
+  color: #fcc419;
+  border: solid 3px #fcc419;
+}
+.nav__btn--green {
+  background-color: #20c997;
+  border: solid 3px #20c997;
+}
+.nav__btn--green:hover {
+  background-color: white;
+  color: #20c997;
+  border: solid 3px #20c997;
+}
+.nav__btn--blue {
+  background-color: #339af0;
+  border: solid 3px #339af0;
+}
+.nav__btn--blue:hover {
+  background-color: white;
+  color: #339af0;
+  border: solid 3px #339af0;
+}
+.nav__btn--purple {
+  background-color: #845ef7;
+  border: solid 3px #845ef7;
+}
+.nav__btn--purple:hover {
+  background-color: white;
+  color: #845ef7;
+  border: solid 3px #845ef7;
 }

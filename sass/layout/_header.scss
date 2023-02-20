@@ -1,6 +1,7 @@
 .header {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
+  padding-top: 1.8rem;
 }
 
 .nav-header {
@@ -31,7 +32,8 @@
     line-height: 1;
 
     &-formate {
-      font-size: 5.4rem;
+      font-size: 5.55rem;
+      font-weight: 600;
       //   background-color: rgba(255, 192, 203, 0.451);
     }
     &-sub {
@@ -45,7 +47,7 @@
   display: grid;
   grid-template-columns: repeat(2, max-content);
   align-content: center;
-  gap: 5rem;
+  gap: 3.5rem;
   //   background-color: beige;
   font-size: 2rem;
   color: $color-primary;
@@ -54,9 +56,92 @@
     color: inherit;
     align-self: center;
     font-weight: 600;
+    transition: text-decoration 2s;
+    &:hover {
+      //   text-decoration: underline;
+      color: $color-primary-light-1;
+    }
+    &:active {
+      color: $color-primary-dark-1;
+    }
   }
 
-  &__cta-plan {
+  &__plan {
     color: inherit;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+
+    color: white;
+    font-weight: 600;
+    // background-color: $color-primary;
+  }
+
+  &__btn {
+    padding: 0.2rem 3.4rem;
+    font-size: 2.2rem;
+    border-radius: 100px;
+
+    &--red {
+      background-color: $color-menu-red;
+      border: solid 3px $color-menu-red;
+      &:hover {
+        background-color: white;
+        color: $color-menu-red;
+        border: solid 3px $color-menu-red;
+      }
+    }
+    &--orange {
+      background-color: $color-menu-orange;
+      border: solid 3px $color-menu-orange;
+      &:hover {
+        background-color: white;
+        color: $color-menu-orange;
+        border: solid 3px $color-menu-orange;
+      }
+    }
+    &--yellow {
+      background-color: $color-menu-yellow;
+      border: solid 3px $color-menu-yellow;
+      &:hover {
+        background-color: white;
+        color: $color-menu-yellow;
+        border: solid 3px $color-menu-yellow;
+      }
+    }
+    &--green {
+      background-color: $color-menu-green;
+      border: solid 3px $color-menu-green;
+      &:hover {
+        background-color: white;
+        color: $color-menu-green;
+        border: solid 3px $color-menu-green;
+      }
+    }
+    &--blue {
+      background-color: $color-menu-blue;
+      border: solid 3px $color-menu-blue;
+      &:hover {
+        background-color: white;
+        color: $color-menu-blue;
+        border: solid 3px $color-menu-blue;
+      }
+    }
+    &--purple {
+      background-color: $color-menu-purple;
+      border: solid 3px $color-menu-purple;
+      &:hover {
+        background-color: white;
+        color: $color-menu-purple;
+        border: solid 3px $color-menu-purple;
+      }
+    }
   }
 }
