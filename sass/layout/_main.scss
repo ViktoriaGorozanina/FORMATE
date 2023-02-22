@@ -11,19 +11,22 @@
     // padding-left: 3rem;
   }
   &__headline {
+    font-family: Rubik;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: $color-primary;
-    line-height: 1.3;
+    line-height: 1.2;
     letter-spacing: 1.4px;
   }
 
   &__text {
+    font-family: Rubik;
     max-width: 48ch;
     font-size: 2.4rem;
     line-height: 1.4;
+    margin-bottom: 4.5rem;
   }
 
   &__img-box {
