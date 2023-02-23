@@ -267,3 +267,8 @@ a {
   width: 90%;
   height: auto;
 }
+
+.intro {
+  background-color: coral;
+  width: 100% !important;
+}
